@@ -104,3 +104,21 @@ h1, h2, h3 { font-family: var(--font-heading); color: var(--navy); line-height: 
 .stage-card__icon { font-size: 2rem; margin-bottom: 12px; }
 .stage-card h3 { margin-bottom: 8px; font-size: 1.1rem; }
 .stage-card p { color: var(--text-muted); font-size: 0.9rem; }
+/* ===== FACILITIES ===== */
+.facilities { background: var(--off-white); padding: 80px 0; }
+.facilities h2 { font-size: 2rem; margin: 0 auto 40px; max-width: 600px; }
+
+.facility-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+.facility-item {
+  background: var(--white);
+  border-left: 4px solid var(--gold);
+  border-radius: 10px;
+  padding: 22px;
+  box-shadow: var(--shadow);
+}
+.facility-item h3 { font-size: 1.05rem; margin-bottom: 8px; }
+.facility-item p { color: var(--text-muted); font-size: 0.9rem; }
