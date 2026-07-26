@@ -122,3 +122,23 @@ h1, h2, h3 { font-family: var(--font-heading); color: var(--navy); line-height: 
 }
 .facility-item h3 { font-size: 1.05rem; margin-bottom: 8px; }
 .facility-item p { color: var(--text-muted); font-size: 0.9rem; }
+/* ===== GALLERY ===== */
+.gallery { padding: 80px 0; }
+.gallery h2 { font-size: 2rem; margin: 0 auto 40px; max-width: 600px; }
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+}
+.gallery-item {
+  aspect-ratio: 4 / 3;
+  background: linear-gradient(135deg, var(--gold-light), var(--off-white));
+  border-radius: var(--radius);
+}
+.gallery-note {
+  margin-top: 20px;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  text-align: center;
+}
