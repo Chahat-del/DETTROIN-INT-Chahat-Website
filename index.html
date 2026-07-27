@@ -246,24 +246,184 @@
   <section class="testimonials" id="testimonials">
     <div class="container">
       <p class="eyebrow center">Testimonials</p>
-      <h2 class="center">What Parents Say</h2>
+      <h2 class="center testi-heading">What Parents Say About Us</h2>
+      <p class="testi-sub center">Real voices from our school community — parents who trust us with their children's future.</p>
 
-      <div class="testimonial-grid">
-        <blockquote class="testimonial-card fade-in">
-          <p>"The teachers are caring, lessons are fun, and my child is growing in confidence every day."</p>
-          — Parent of Class 5 Student
-        </blockquote>
-        <blockquote class="testimonial-card fade-in">
-          <p>"A safe, welcoming school where staff know every student and encourage them to do their best."</p>
-          — Parent of Class 3 Student
-        </blockquote>
-        <blockquote class="testimonial-card fade-in">
-          <p>"My daughter enjoys learning, playing sports, and exploring her creativity here."</p>
-          — Parent of Class 7 Student
-        </blockquote>
+      <div class="testi-carousel" aria-label="Parent testimonials">
+        <div class="testi-track" id="testiTrack">
+
+          <div class="testi-card">
+            <div class="testi-card__top">
+              <div class="testi-avatar" style="--av-bg:#1a4a6b;">AS</div>
+              <div>
+                <p class="testi-name">Anita Singh</p>
+                <p class="testi-role">Parent of Aarohi Singh, Class 2</p>
+                <div class="testi-stars">★★★★★</div>
+              </div>
+            </div>
+            <p class="testi-quote">"Excellence International School makes learning exciting with hands-on activities, group projects, and creative lessons. My child is developing critical thinking, confidence, and problem-solving skills while enjoying school."</p>
+          </div>
+
+          <div class="testi-card">
+            <div class="testi-card__top">
+              <div class="testi-avatar" style="--av-bg:#e8920a;">KA</div>
+              <div>
+                <p class="testi-name">Kavita Agarwal</p>
+                <p class="testi-role">Parent of Diya Agarwal, Class 1</p>
+                <div class="testi-stars">★★★★★</div>
+              </div>
+            </div>
+            <p class="testi-quote">"The school not only focuses on academics but also builds strong values. My child is learning responsibility, honesty, respect, and teamwork while having fun, making friends, and enjoying every moment at school."</p>
+          </div>
+
+          <div class="testi-card">
+            <div class="testi-card__top">
+              <div class="testi-avatar" style="--av-bg:#2a6496;">RS</div>
+              <div>
+                <p class="testi-name">Rakesh Sharma</p>
+                <p class="testi-role">Parent of Aarav Sharma, Class 5</p>
+                <div class="testi-stars">★★★★★</div>
+              </div>
+            </div>
+            <p class="testi-quote">"Excellence International School has been amazing for my child. The teachers are caring, lessons are fun, and my child is growing in confidence, learning new skills, and enjoying school every single day."</p>
+          </div>
+
+          <div class="testi-card">
+            <div class="testi-card__top">
+              <div class="testi-avatar" style="--av-bg:#0e2e45;">PM</div>
+              <div>
+                <p class="testi-name">Priya Mehta</p>
+                <p class="testi-role">Parent of Riya Mehta, Class 3</p>
+                <div class="testi-stars">★★★★★</div>
+              </div>
+            </div>
+            <p class="testi-quote">"I am truly impressed with how the school balances academics and co-curricular activities. My daughter looks forward to going to school every morning, which says everything about how welcoming and inspiring this place is."</p>
+          </div>
+
+          <div class="testi-card">
+            <div class="testi-card__top">
+              <div class="testi-avatar" style="--av-bg:#b45309;">SV</div>
+              <div>
+                <p class="testi-name">Suresh Verma</p>
+                <p class="testi-role">Parent of Arjun Verma, Class 7</p>
+                <div class="testi-stars">★★★★★</div>
+              </div>
+            </div>
+            <p class="testi-quote">"The faculty here is dedicated and approachable. Whenever I have had a concern, the teachers have responded promptly and thoughtfully. My son has improved tremendously both academically and in his overall personality."</p>
+          </div>
+
+          <div class="testi-card">
+            <div class="testi-card__top">
+              <div class="testi-avatar" style="--av-bg:#1a4a6b;">NG</div>
+              <div>
+                <p class="testi-name">Neha Gupta</p>
+                <p class="testi-role">Parent of Ishaan Gupta, Class 4</p>
+                <div class="testi-stars">★★★★★</div>
+              </div>
+            </div>
+            <p class="testi-quote">"Safe campus, caring staff, and a genuinely nurturing environment — Excellence International School ticks all the boxes. My son has blossomed here and I could not have chosen a better school for him in Aligarh."</p>
+          </div>
+
+        </div>
+
+        <div class="testi-controls">
+          <button class="testi-btn" id="testiPrev" aria-label="Previous">&#10094;</button>
+          <div class="testi-dots" id="testiDots"></div>
+          <button class="testi-btn" id="testiNext" aria-label="Next">&#10095;</button>
+        </div>
       </div>
     </div>
   </section>
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <p class="eyebrow center">Got Questions?</p>
+      <h2 class="center faq__heading">Frequently Asked Questions</h2>
+      <p class="faq__sub center">Everything you need to know before joining the Excellence family.</p>
+
+      <div class="faq__list">
+
+        <div class="faq__item">
+          <button class="faq__q" aria-expanded="false">
+            <span class="faq__icon"><i class="fas fa-map-marker-alt"></i></span>
+            <span>Where is Excellence International School located?</span>
+            <span class="faq__arrow"><i class="fas fa-chevron-down"></i></span>
+          </button>
+          <div class="faq__a">
+            <div class="faq__a-inner"><p>Excellence International School is located in Aligarh, Uttar Pradesh. The campus is easily accessible by road and well-connected to major residential areas of the city via our school transport network.</p></div>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__q" aria-expanded="false">
+            <span class="faq__icon"><i class="fas fa-graduation-cap"></i></span>
+            <span>Which classes are available for admission?</span>
+            <span class="faq__arrow"><i class="fas fa-chevron-down"></i></span>
+          </button>
+          <div class="faq__a">
+            <div class="faq__a-inner"><p>We offer admissions from Pre-Primary (Nursery, LKG, UKG) through Middle School (up to Class 8). We also provide a dedicated Daycare facility for young children. Admissions are open for the academic year 2026–27.</p></div>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__q" aria-expanded="false">
+            <span class="faq__icon"><i class="fas fa-futbol"></i></span>
+            <span>Does the school provide extracurricular activities?</span>
+            <span class="faq__arrow"><i class="fas fa-chevron-down"></i></span>
+          </button>
+          <div class="faq__a">
+            <div class="faq__a-inner"><p>Absolutely. We offer a rich range of extracurricular programmes including dance, music, drama, debate, yoga, outdoor sports, and arts & crafts. These activities are built into the school timetable to ensure every child gets to explore and grow beyond textbooks.</p></div>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__q" aria-expanded="false">
+            <span class="faq__icon"><i class="fas fa-bus"></i></span>
+            <span>Is transportation available for students?</span>
+            <span class="faq__arrow"><i class="fas fa-chevron-down"></i></span>
+          </button>
+          <div class="faq__a">
+            <div class="faq__a-inner"><p>Yes. We operate a safe and reliable transport service covering major routes across Aligarh. Our buses are well-maintained, supervised by trained staff, and follow fixed schedules to ensure timely and secure pick-up and drop-off for every student.</p></div>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__q" aria-expanded="false">
+            <span class="faq__icon"><i class="fas fa-shield-alt"></i></span>
+            <span>How does the school ensure student safety on campus?</span>
+            <span class="faq__arrow"><i class="fas fa-chevron-down"></i></span>
+          </button>
+          <div class="faq__a">
+            <div class="faq__a-inner"><p>Student safety is our top priority. The campus is equipped with 24/7 CCTV surveillance, controlled entry and exit points, and dedicated supervisors during school hours. All staff undergo background checks and safety training.</p></div>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__q" aria-expanded="false">
+            <span class="faq__icon"><i class="fas fa-star"></i></span>
+            <span>What makes Excellence International School one of the best schools in Aligarh?</span>
+            <span class="faq__arrow"><i class="fas fa-chevron-down"></i></span>
+          </button>
+          <div class="faq__a">
+            <div class="faq__a-inner"><p>Our school stands out for its blend of academic rigour, modern teaching methods, value-based education, and holistic development. With experienced faculty, a safe campus, strong co-curricular programmes, and a nurturing environment, we focus on shaping confident, capable, and compassionate individuals ready for the future.</p></div>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__q" aria-expanded="false">
+            <span class="faq__icon"><i class="fas fa-file-alt"></i></span>
+            <span>What documents are required for admission?</span>
+            <span class="faq__arrow"><i class="fas fa-chevron-down"></i></span>
+          </button>
+          <div class="faq__a">
+            <div class="faq__a-inner"><p>Required documents include the child's birth certificate, previous school report card (if applicable), passport-size photographs, parent/guardian ID proof, and address proof. Our admissions team is happy to guide you through the process — feel free to contact us.</p></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
   <script src="script.js"></script>
 </body>
 </html>
