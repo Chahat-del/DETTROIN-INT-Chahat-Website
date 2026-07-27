@@ -61,6 +61,20 @@ if (heroSlides.length) {
   heroPrev.addEventListener('click', () => { clearInterval(slideTimer); showSlide(currentSlide - 1); startAutoplay(); });
 }
 
+// ===== GALLERY FLIP CARDS =====
+document.querySelectorAll('.flip-card').forEach((card) => {
+  card.addEventListener('click', () => {
+    card.classList.toggle('flipped');
+  });
+  // Also allow keyboard toggle
+  card.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      card.classList.toggle('flipped');
+    }
+  });
+});
+
 // ===== FAQ ACCORDION =====
 document.querySelectorAll('.faq__q').forEach((btn) => {
   btn.addEventListener('click', () => {

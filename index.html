@@ -45,7 +45,7 @@
         <a href="#facilities">Facilities</a>
         <a href="#gallery">Gallery</a>
         <a href="#testimonials">Testimonials</a>
-        <a href="#contact" class="btn btn--nav">Enquire Now</a>
+        <a href="#enquiry" class="btn btn--nav">Enquire Now</a>
       </nav>
 
       <button class="navbar__toggle" id="navToggle" aria-label="Toggle menu">
@@ -82,7 +82,7 @@
           Education at Excellence International School is not limited to books. It aims to create responsible individuals who are prepared for academic success as well as real-world challenges.
         </p>
       </div>
-      <div class="about__visual fade-in">
+      <div class="about__visual fade-in" id="enquiry">
         <div class="enquiry-card">
           <div class="enquiry-card__header">
             <span class="enquiry-badge">🎓 Admissions Open 2026–27</span>
@@ -272,16 +272,85 @@
     <div class="container">
       <p class="eyebrow center">Gallery</p>
       <h2 class="center">Life at Excellence International School</h2>
+      <p class="gallery-sub center">Click on any card to explore what makes us special.</p>
 
       <div class="gallery-grid">
-        <div class="gallery-item fade-in"></div>
-        <div class="gallery-item fade-in"></div>
-        <div class="gallery-item fade-in"></div>
-        <div class="gallery-item fade-in"></div>
-        <div class="gallery-item fade-in"></div>
-        <div class="gallery-item fade-in"></div>
+
+        <!-- Card 1 -->
+        <div class="flip-card" tabindex="0">
+          <div class="flip-card__inner">
+            <div class="flip-card__front fc-blue" style="background-image:url('assets/images/gallery-1.jpg')">
+              <div class="flip-card__front-overlay">
+                <span class="flip-card__icon-big">🧩</span>
+                <span class="flip-card__label">Play-Based Learning</span>
+                <span class="flip-card__hint">Click to explore →</span>
+              </div>
+            </div>
+            <div class="flip-card__back">
+              <div class="flip-card__back-icon">🧩</div>
+              <h3>Play-Based Learning</h3>
+              <p>Our students learn through hands-on activities, building blocks, puzzles, and interactive games that develop critical thinking, creativity, and problem-solving skills from an early age.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="flip-card" tabindex="0">
+          <div class="flip-card__inner">
+            <div class="flip-card__front fc-amber" style="background-image:url('assets/images/gallery-2.jpg')">
+              <div class="flip-card__front-overlay">
+                <span class="flip-card__icon-big">🤗</span>
+                <span class="flip-card__label">Fun &amp; Friendship</span>
+                <span class="flip-card__hint">Click to explore →</span>
+              </div>
+            </div>
+            <div class="flip-card__back">
+              <div class="flip-card__back-icon">🤗</div>
+              <h3>Fun &amp; Friendship</h3>
+              <p>We believe a happy child learns better. Our campus is filled with joyful moments — celebrations, performances, and activities that help children form lasting friendships and build social confidence.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="flip-card" tabindex="0">
+          <div class="flip-card__inner">
+            <div class="flip-card__front fc-teal" style="background-image:url('assets/images/gallery-3.jpg')">
+              <div class="flip-card__front-overlay">
+                <span class="flip-card__icon-big">🍱</span>
+                <span class="flip-card__label">Nutrition &amp; Care</span>
+                <span class="flip-card__hint">Click to explore →</span>
+              </div>
+            </div>
+            <div class="flip-card__back">
+              <div class="flip-card__back-icon">🍱</div>
+              <h3>Nutrition &amp; Care</h3>
+              <p>Lunchtime is more than eating — it teaches children sharing, responsibility, and social skills. Our supervised meal breaks ensure every child is nourished, comfortable, and cared for throughout the day.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="flip-card" tabindex="0">
+          <div class="flip-card__inner">
+            <div class="flip-card__front fc-gold" style="background-image:url('assets/images/gallery-4.jpg')">
+              <div class="flip-card__front-overlay">
+                <span class="flip-card__icon-big">📚</span>
+                <span class="flip-card__label">Classroom Excellence</span>
+                <span class="flip-card__hint">Click to explore →</span>
+              </div>
+            </div>
+            <div class="flip-card__back">
+              <div class="flip-card__back-icon">📚</div>
+              <h3>Classroom Excellence</h3>
+              <p>Our vibrant, well-equipped classrooms are designed to spark curiosity. Experienced teachers use interactive methods, visual aids, and engaging activities to make every lesson memorable and effective.</p>
+            </div>
+          </div>
+        </div>
+
       </div>
-      <p class="gallery-note">Photos coming soon — replace these placeholders in <code>assets/images/</code> with real campus photos.</p>
+
+      <p class="gallery-note">📸 Save your school photos as <code>gallery-1.jpg</code> to <code>gallery-4.jpg</code> in <code>assets/images/</code> to display them on the cards.</p>
     </div>
   </section>
   <!-- TESTIMONIALS -->
