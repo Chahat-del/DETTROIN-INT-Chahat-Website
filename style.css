@@ -85,6 +85,88 @@ h1, h2, h3 { font-family: var(--font-heading); color: var(--navy); line-height: 
 .about__card h3 { color: var(--accent-light); margin-bottom: 10px; }
 .about__card p { color: #c8d8e8; }
 
+/* ===== ENQUIRY CARD ===== */
+.enquiry-card {
+  background: var(--white);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(26,74,107,0.14);
+}
+
+.enquiry-card__header {
+  background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+  padding: 22px 28px 20px;
+  text-align: center;
+}
+.enquiry-badge {
+  display: inline-block;
+  background: var(--accent);
+  color: var(--white);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 4px 14px;
+  border-radius: 50px;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+}
+.enquiry-card__header h3 {
+  color: var(--white);
+  font-size: 1.4rem;
+  margin-bottom: 4px;
+}
+.enquiry-card__header p {
+  color: #a8c4d8;
+  font-size: 0.82rem;
+  margin: 0;
+}
+
+.enquiry-form {
+  padding: 20px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.enquiry-row { display: flex; }
+.enquiry-input {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1.5px solid #d4e3ef;
+  border-radius: 10px;
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  color: var(--text-dark);
+  background: var(--off-white);
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  appearance: none;
+}
+.enquiry-input:focus {
+  border-color: var(--primary-light);
+  box-shadow: 0 0 0 3px rgba(42,100,150,0.10);
+  background: var(--white);
+}
+.enquiry-textarea { resize: vertical; min-height: 72px; }
+
+.enquiry-submit {
+  margin-top: 4px;
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, var(--accent), var(--accent-hover));
+  color: var(--white);
+  border: none;
+  border-radius: 10px;
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: opacity 0.2s, transform 0.2s;
+}
+.enquiry-submit:hover { opacity: 0.9; transform: translateY(-1px); }
+
 @media (min-width: 768px) {
   .about__inner { grid-template-columns: 1fr 1fr; }
 }
@@ -365,6 +447,12 @@ h1, h2, h3 { font-family: var(--font-heading); color: var(--navy); line-height: 
   font-weight: 500;
   color: #c8d8e8;
 }
+.topbar__link {
+  color: #c8d8e8;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.topbar__link:hover { color: var(--accent-light); }
 .topbar__social {
   display: flex;
   align-items: center;

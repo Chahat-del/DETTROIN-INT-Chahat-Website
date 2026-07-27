@@ -16,8 +16,8 @@
   <div class="topbar">
     <div class="container topbar__inner">
       <div class="topbar__contact">
-        <span>📞 +91 7055582117</span>
-        <span>✉️ info@excellenceinternationalschool.com</span>
+        <a href="tel:+917055582117" class="topbar__link">📞 +91 7055582117</a>
+        <a href="mailto:info@excellenceinternationalschool.com" class="topbar__link">✉️ info@excellenceinternationalschool.com</a>
       </div>
       <div class="topbar__social">
         <span class="topbar__follow">Follow Us:</span>
@@ -83,10 +83,52 @@
         </p>
       </div>
       <div class="about__visual fade-in">
-        <div class="about__card">
-          <h3>Our Vision</h3>
-          <p>To create confident, responsible, and innovative individuals who
-          contribute positively to society.</p>
+        <div class="enquiry-card">
+          <div class="enquiry-card__header">
+            <span class="enquiry-badge">🎓 Admissions Open 2026–27</span>
+            <h3>Quick Enquiry</h3>
+            <p>Fill in your details and we'll get back to you shortly.</p>
+          </div>
+          <form class="enquiry-form" id="enquiryForm" novalidate>
+            <div class="enquiry-row">
+              <select class="enquiry-input" name="year" required>
+                <option value="" disabled selected>Academic Year</option>
+                <option value="2026-2027">2026 – 2027</option>
+                <option value="2027-2028">2027 – 2028</option>
+              </select>
+            </div>
+            <div class="enquiry-row">
+              <input class="enquiry-input" type="text" name="name" placeholder="Your Name" required />
+            </div>
+            <div class="enquiry-row">
+              <input class="enquiry-input" type="email" name="email" placeholder="Your Email" required />
+            </div>
+            <div class="enquiry-row">
+              <input class="enquiry-input" type="tel" name="phone" placeholder="Phone Number" required />
+            </div>
+            <div class="enquiry-row">
+              <select class="enquiry-input" name="grade" required>
+                <option value="" disabled selected>Select a Grade</option>
+                <option>Nursery</option>
+                <option>LKG</option>
+                <option>UKG</option>
+                <option>Class 1</option>
+                <option>Class 2</option>
+                <option>Class 3</option>
+                <option>Class 4</option>
+                <option>Class 5</option>
+                <option>Class 6</option>
+                <option>Class 7</option>
+                <option>Class 8</option>
+              </select>
+            </div>
+            <div class="enquiry-row">
+              <textarea class="enquiry-input enquiry-textarea" name="message" placeholder="Your message (optional)" rows="3"></textarea>
+            </div>
+            <button type="submit" class="enquiry-submit">
+              <i class="fas fa-paper-plane"></i> Send Enquiry
+            </button>
+          </form>
         </div>
       </div>
     </div>
