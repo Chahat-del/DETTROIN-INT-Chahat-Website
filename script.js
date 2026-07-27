@@ -20,6 +20,23 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.15 });
 fadeEls.forEach((el) => observer.observe(el));
 
+// ===== MODERN INFRASTRUCTURE slide-in =====
+const slideEls = document.querySelectorAll('.fade-slide');
+const slideObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      slideObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.12 });
+slideEls.forEach((el) => {
+  // assign direction based on block type
+  if (el.classList.contains('modern__block--left'))  el.classList.add('from-left');
+  if (el.classList.contains('modern__block--right')) el.classList.add('from-right');
+  slideObserver.observe(el);
+});
+
 // ===== HERO SLIDESHOW (with arrows) =====
 const slides = document.querySelectorAll('.hero__slide');
 const prevBtn = document.getElementById('heroPrev');
