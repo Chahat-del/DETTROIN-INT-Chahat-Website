@@ -11,7 +11,13 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
+<!-- TOP BAR -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <span>📞 +91 7055582117</span>
+      <span>✉️ info@excellenceinternationalschool.com</span>
+    </div>
+  </div>
 
   <header class="navbar" id="navbar">
     <div class="container navbar__inner">
@@ -34,39 +40,17 @@
   </header>
 
 
+  <!-- HERO -->
   <section class="hero" id="home">
-    <div class="container hero__inner">
-      <div class="hero__content fade-in">
-        <p class="eyebrow">Best School in Aligarh, Uttar Pradesh</p>
-        <h1>Shaping Future Leaders Through Quality Education</h1>
-        <p class="hero__text">
-          A student-focused environment built on discipline, creativity, and holistic
-          growth — helping every child explore their full potential.
-        </p>
-        <div class="hero__actions">
-          <a href="#contact" class="btn btn--primary">Admissions Open 2026–27</a>
-          <a href="#about" class="btn btn--ghost">Learn More</a>
-        </div>
-      </div>
-      
-
-      <div class="hero__stats fade-in">
-        <div class="stat-card">
-          <h3>25+</h3>
-          <p>Years of Excellence</p>
-        </div>
-        <div class="stat-card">
-          <h3>1500+</h3>
-          <p>Happy Students</p>
-        </div>
-        <div class="stat-card">
-          <h3>100%</h3>
-          <p>Parent Satisfaction</p>
-        </div>
-      </div>
+    <div class="hero__slides" id="heroSlides">
+      <div class="hero__slide active" style="background-image: url('assets/images/hero-1.jpg');"></div>
+      <div class="hero__slide" style="background-image: url('assets/images/hero-2.jpg');"></div>
+      <div class="hero__slide" style="background-image: url('assets/images/hero-3.jpg');"></div>
     </div>
-  </section>
 
+    <button class="hero__arrow hero__arrow--left" id="heroPrev" aria-label="Previous slide">&#10094;</button>
+    <button class="hero__arrow hero__arrow--right" id="heroNext" aria-label="Next slide">&#10095;</button>
+  </section>
 <!-- ABOUT -->
   <section class="about" id="about">
     <div class="container about__inner">
